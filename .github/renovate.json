@@ -41,7 +41,8 @@
 			"prBodyDefinitions": {
 				"Change": "All locks refreshed"
 			},
-			"rebaseWhen": "behind-base-branch"
+			"rebaseWhen": "behind-base-branch",
+			"schedule": []
 		}
 	}
 }
