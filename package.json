@@ -6,6 +6,9 @@
   "author": "kuro-kuroite <26164343+kuro-kuroite@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "renovate": "renovate"
+  },
   "devDependencies": {
     "@types/react": "17.0.0",
     "renovate": "^24.27.4",
