@@ -23,6 +23,7 @@
 			":automergeRequireAllStatusChecks",
 			":ignoreModulesAndTests",
 			":prNotPending",
+			":disableRateLimiting",
 			"helpers:disableTypesNodeMajor",
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)"
