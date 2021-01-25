@@ -35,6 +35,16 @@
 		"bumpVersion": "major",
 		"postUpdateOptions": [
 			"yarnDedupeHighest"
-		]
+		],
+		"lockFileMaintenance": {
+			"enabled": true,
+			"recreateClosed": true,
+			"rebaseStalePrs": true,
+			"branchTopic": "lock-file-maintenance",
+			"commitMessageAction": "Lock file maintenance",
+			"prBodyDefinitions": {
+				"Change": "All locks refreshed"
+			}
+		}
 	}
 }
