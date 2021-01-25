@@ -48,6 +48,13 @@
 			"schedule": [
 				"at any time"
 			]
-		}
+		},
+		"regexManagers": [
+			{
+				"fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+				"matchStrings": ["uses: (?<depName>[a-z-/]+?)@(?<currentValue>.+?)\\s"],
+				"datasourceTemplate": "github-tags"
+			}
+		]
 	}
 }
