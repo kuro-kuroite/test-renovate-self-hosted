@@ -32,7 +32,6 @@
 		],
 		"assigneesSampleSize": 1,
 		"rangeStrategy": "bump",
-		"bumpVersion": "major",
 		"postUpdateOptions": [
 			"yarnDedupeHighest"
 		],
