@@ -22,7 +22,6 @@
 			":automergePr",
 			":automergeRequireAllStatusChecks",
 			":ignoreModulesAndTests",
-			":prNotPending",
 			":disableRateLimiting",
 			"helpers:disableTypesNodeMajor",
 			":enableVulnerabilityAlertsWithLabel(security)",
