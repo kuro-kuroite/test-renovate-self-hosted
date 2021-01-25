@@ -28,6 +28,9 @@
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)"
 		],
+		"schedule": [
+			"at any time"
+		],
 		"stabilityDays": 3,
 		"rangeStrategy": "bump",
 		"postUpdateOptions": [
@@ -42,7 +45,9 @@
 				"Change": "All locks refreshed"
 			},
 			"rebaseWhen": "behind-base-branch",
-			"schedule": []
+			"schedule": [
+				"at any time"
+			]
 		}
 	}
 }
