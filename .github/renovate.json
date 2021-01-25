@@ -4,35 +4,37 @@
 		"config:base",
 		":timezone(Asia/Tokyo)"
 	],
-	"postUpdateOptions": [
-		"yarnDedupeHighest"
-	],
 	"npm": {
 		"extends": [
+			"group:monorepos",
 			"group:definitelyTyped",
 			"group:jsUnitTestNonMajor",
 			"github>hatena/renovate-config:groupLinters",
 			"group:allNonMajor",
-			":separateMultipleMajorReleases",
+			":separateMajorReleases",
+			":combinePatchMinorReleases",
+			":ignoreUnstable",
+			":prImmediately",
+			":semanticCommits",
+			":semanticPrefixChore",
+			":updateNotScheduled",
 			":automergeMinor",
 			":automergePr",
 			":automergeRequireAllStatusChecks",
-			":ignoreUnstable",
+			":ignoreModulesAndTests",
+			":prConcurrentLimit20",
+			"helpers:disableTypesNodeMajor",
 			":enableVulnerabilityAlertsWithLabel(security)",
-			":labels(renovate,maintenance-bot)",
-			":assignee(kuro-kuroite)",
-			":assigneesSampleSize(1)",
-			":bumpVersion(minor)",
-			":updateNotScheduled",
-			":semanticCommits",
-			"helpers:followTypescriptNext"
+			":labels(renovate,maintenance-bot)"
 		],
-		"baseBranches": [
-			"main"
+		"assignees": [
+			"kuro-kuroite"
 		],
+		"assigneesSampleSize": 1,
 		"rangeStrategy": "bump",
-		"supportPolicy": [
-			"lts_latest"
+		"bumpVersion": "major",
+		"postUpdateOptions": [
+			"yarnDedupeHighest"
 		]
 	}
 }
