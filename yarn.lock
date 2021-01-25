@@ -2953,10 +2953,10 @@ re2@1.15.9:
     nan "^2.14.2"
     node-gyp "^7.1.2"
 
-react@17.0.0:
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-17.0.0.tgz#ad96d5fa1a33bb9b06d0cc52672f7992d84aa662"
-  integrity sha512-rG9bqS3LMuetoSUKHN8G3fMNuQOePKDThK6+2yXFWtoeTDLVNh/QCaxT+Jr+rNf4lwNXpx+atdn3Aa0oi8/6eQ==
+react@17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
+  integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -3138,10 +3138,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@^24.27.4:
-  version "24.27.4"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.27.4.tgz#ce1e6ec961176a72c719e34476d25cd5cdee42e6"
-  integrity sha512-w2LJfGDM8JY8sXFeImFuy0cx4Y30r3XoLAlxvtMk0R0yCQSzBw6SU2IYOeC7TvN8wL2e19QrGmkWz248IU0GZA==
+renovate@^24.28.0:
+  version "24.28.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.28.0.tgz#fdf744ca675de4a45948bfa5970c2a0a6be1da2f"
+  integrity sha512-YcK7VstW1gpWvZoeVOPsNjpaC6gZbIdnedfE5c1J4r1AtvYlhQy1FpR8rylwgJdeg42MSdVoUkovgPS1IGfX6Q==
   dependencies:
     "@breejs/later" "4.0.2"
     "@iarna/toml" "2.2.5"
