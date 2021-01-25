@@ -1,0 +1,25 @@
+name: renovate
+on:
+  # schedule:
+  #   - cron: "0 8 * * MON"
+  push:
+    branches:
+      - renovate
+      - main
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upgrade the Npm library
+        run: |
+          echo 'Upgrade the Npm library'
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Self-hosted Renovate
+        run: |
+          npx renovate
+        env:
+          LOG_LEVEL: debug
+          RENOVATE_TOKEN: ${{ secrets.RENOVATE_GITHUB_TOKEN }}
+          RENOVATE_CONFIG_FILE: .github/renovate-config.js
