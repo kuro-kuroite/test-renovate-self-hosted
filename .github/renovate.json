@@ -23,6 +23,7 @@
 			":automergeRequireAllStatusChecks",
 			":ignoreModulesAndTests",
 			":prConcurrentLimit20",
+			":prNotPending",
 			"helpers:disableTypesNodeMajor",
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)"
@@ -44,6 +45,8 @@
 			},
 			"rebaseWhen": "behind-base-branch"
 		},
-		"prHourlyLimit": 20
+		"prHourlyLimit": 20,
+		"branchConcurrentLimit": 20,
+		"stabilityDays": 3
 	}
 }
