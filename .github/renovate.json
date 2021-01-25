@@ -43,6 +43,7 @@
 				"Change": "All locks refreshed"
 			},
 			"rebaseWhen": "behind-base-branch"
-		}
+		},
+		"prHourlyLimit": 20
 	}
 }
