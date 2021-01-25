@@ -27,6 +27,7 @@
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)"
 		],
+		"branchPrefix": "renovate-",
 		"assignees": [
 			"@kuro-kuroite"
 		],
@@ -37,7 +38,7 @@
 		],
 		"lockFileMaintenance": {
 			"enabled": true,
-			"recreateClosed": false,
+			"recreateClosed": true,
 			"rebaseStalePrs": true,
 			"branchTopic": "lock-file-maintenance",
 			"commitMessageAction": "Lock file maintenance",
