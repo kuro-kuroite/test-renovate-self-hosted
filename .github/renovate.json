@@ -28,9 +28,7 @@
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)"
 		],
-		"assignees": [
-			"kuro-kuroite"
-		],
+		"stabilityDays": 3,
 		"rangeStrategy": "bump",
 		"postUpdateOptions": [
 			"yarnDedupeHighest"
@@ -44,7 +42,6 @@
 				"Change": "All locks refreshed"
 			},
 			"rebaseWhen": "behind-base-branch"
-		},
-		"stabilityDays": 3
+		}
 	}
 }
