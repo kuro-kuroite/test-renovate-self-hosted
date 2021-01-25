@@ -52,8 +52,8 @@
 		"regexManagers": [
 			{
 				"fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-				"matchStrings": ["uses: (?<depName>[a-z-/]+?)@(?<currentValue>.+?)\\s"],
-				"datasourceTemplate": "github-tags"
+				"matchStrings": ["uses: (?<depName>.*?)@(?<currentValue>.*?)\n"],
+				"datasourceTemplate": "github-releases"
 			}
 		]
 	}
