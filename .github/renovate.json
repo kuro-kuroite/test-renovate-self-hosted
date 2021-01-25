@@ -20,7 +20,7 @@
 			":ignoreUnstable",
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)",
-			":assignees(kuro-kuroite)",
+			":assignee(kuro-kuroite)",
 			":assigneesSampleSize(1)",
 			":bumpVersion(minor)",
 			":updateNotScheduled",
