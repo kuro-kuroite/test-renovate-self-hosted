@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.RENOVATE_GITHUB_TOKEN }}
       - name: Use Node.js
-        uses: actions/setup-node@vv1.4.4
+        uses: actions/setup-node@v1.4.4
         with:
           node-version: "14"
       - name: Get Yarn Cache Directory Path
