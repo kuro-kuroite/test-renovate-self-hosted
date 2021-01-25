@@ -1,6 +1,6 @@
 {
   "name": "test-renovate-self-hosted",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": "https://github.com/kuro-kuroite/test-renovate-self-hosted.git",
   "author": "kuro-kuroite <26164343+kuro-kuroite@users.noreply.github.com>",
@@ -8,10 +8,10 @@
   "private": true,
   "devDependencies": {
     "@types/react": "17.0.0",
-    "renovate": "^24.27.4",
+    "renovate": "^24.28.0",
     "typesync": "^0.8.0"
   },
   "dependencies": {
-    "react": "17.0.0"
+    "react": "17.0.1"
   }
 }
