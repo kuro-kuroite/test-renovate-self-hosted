@@ -28,7 +28,7 @@
 			":labels(renovate,maintenance-bot)"
 		],
 		"assignees": [
-			"kuro-kuroite"
+			"@kuro-kuroite"
 		],
 		"assigneesSampleSize": 1,
 		"rangeStrategy": "bump",
