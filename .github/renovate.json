@@ -37,7 +37,7 @@
 		],
 		"lockFileMaintenance": {
 			"enabled": true,
-			"recreateClosed": true,
+			"recreateClosed": false,
 			"rebaseStalePrs": true,
 			"branchTopic": "lock-file-maintenance",
 			"commitMessageAction": "Lock file maintenance",
