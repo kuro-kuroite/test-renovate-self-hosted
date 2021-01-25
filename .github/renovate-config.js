@@ -3,8 +3,8 @@ module.exports = {
 	platform: "github",
 	onboarding: false,
 	branchPrefix: "renovate-",
-	prConcurrentLimit: 0,
-  prHourlyLimit: 0,
+	prConcurrentLimit: 20,
+  prHourlyLimit: 20,
 	includeForks: true,
   repositories: ["kuro-kuroite/test-renovate-self-hosted"],
 };
