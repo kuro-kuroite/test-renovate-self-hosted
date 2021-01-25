@@ -28,9 +28,6 @@
 			":enableVulnerabilityAlertsWithLabel(security)",
 			":labels(renovate,maintenance-bot)"
 		],
-		"schedule": [
-			"at any time"
-		],
 		"stabilityDays": 3,
 		"rangeStrategy": "bump",
 		"postUpdateOptions": [
