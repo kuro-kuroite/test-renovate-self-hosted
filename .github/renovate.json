@@ -29,9 +29,8 @@
 		],
 		"branchPrefix": "renovate-",
 		"assignees": [
-			"@kuro-kuroite"
+			"kuro-kuroite"
 		],
-		"assigneesSampleSize": 1,
 		"rangeStrategy": "bump",
 		"postUpdateOptions": [
 			"yarnDedupeHighest"
