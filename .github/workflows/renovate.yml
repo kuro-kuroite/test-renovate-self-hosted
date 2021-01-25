@@ -1,0 +1,43 @@
+name: renovate
+on:
+  # schedule:
+  #   - cron: "0 8 * * MON"
+  push:
+    branches:
+      - renovate
+      - main
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - name: Get Yarn Cache Directory Path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install npm
+        run: |
+          yarn --frozen-lockfile
+      - name: Upgrade the Npm library
+        run: |
+          echo 'Upgrade the Npm library'
+      - name: Self-hosted Renovate
+        run: |
+          npm install -g yarn
+          npx renovate
+        env:
+          LOG_LEVEL: debug
+          RENOVATE_TOKEN: ${{ secrets.RENOVATE_GITHUB_TOKEN }}
+          RENOVATE_CONFIG_FILE: .github/renovate-config.js
