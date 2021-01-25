@@ -38,7 +38,8 @@ jobs:
       - name: Self-hosted Renovate
         run: |
           npm install -g yarn
-          npx renovate || exit 1
+          set -e
+          npx renovate
         env:
           LOG_LEVEL: debug
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_GITHUB_TOKEN }}
