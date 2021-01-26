@@ -2,7 +2,31 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:base",
-		":timezone(Asia/Tokyo)"
+		":timezone(Asia/Tokyo)",
+		"group:allNonMajor",
+		":separateMajorReleases",
+		":combinePatchMinorReleases",
+		":ignoreUnstable",
+		":prImmediately",
+		":semanticCommits",
+		":semanticPrefixChore",
+		":updateNotScheduled",
+		":automergeMinor",
+		":automergePr",
+		":automergeRequireAllStatusChecks",
+		":disableRateLimiting",
+		":enableVulnerabilityAlertsWithLabel(security)",
+		":labels(renovate,maintenance-bot)"
+	],
+	"baseBranches": ["main"],
+	"branchPrefix": "renovate/",
+	"stabilityDays": 3,
+	"regexManagers": [
+		{
+			"fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+			"matchStrings": ["uses: (?<depName>.*?)@(?<currentValue>.*?)\n"],
+			"datasourceTemplate": "github-releases"
+		}
 	],
 	"npm": {
 		"extends": [
@@ -10,24 +34,9 @@
 			"group:definitelyTyped",
 			"group:jsUnitTestNonMajor",
 			"github>hatena/renovate-config:groupLinters",
-			"group:allNonMajor",
-			":separateMajorReleases",
-			":combinePatchMinorReleases",
-			":ignoreUnstable",
-			":prImmediately",
-			":semanticCommits",
-			":semanticPrefixChore",
-			":updateNotScheduled",
-			":automergeMinor",
-			":automergePr",
-			":automergeRequireAllStatusChecks",
 			":ignoreModulesAndTests",
-			":disableRateLimiting",
-			"helpers:disableTypesNodeMajor",
-			":enableVulnerabilityAlertsWithLabel(security)",
-			":labels(renovate,maintenance-bot)"
+			"helpers:disableTypesNodeMajor"
 		],
-		"stabilityDays": 3,
 		"rangeStrategy": "bump",
 		"postUpdateOptions": [
 			"yarnDedupeHighest"
@@ -44,13 +53,6 @@
 			"schedule": [
 				"at any time"
 			]
-		},
-		"regexManagers": [
-			{
-				"fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-				"matchStrings": ["uses: (?<depName>.*?)@(?<currentValue>.*?)\n"],
-				"datasourceTemplate": "github-releases"
-			}
-		]
+		}
 	}
 }
