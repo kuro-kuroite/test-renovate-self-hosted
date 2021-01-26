@@ -33,8 +33,22 @@
 			"group:definitelyTyped",
 			"group:jsUnitTestNonMajor",
 			"github>hatena/renovate-config:groupLinters",
+			"group:allNonMajor",
+			":separateMajorReleases",
+			":combinePatchMinorReleases",
+			":ignoreUnstable",
+			":prImmediately",
+			":semanticCommits",
+			":semanticPrefixChore",
+			":updateNotScheduled",
+			":automergeMinor",
+			":automergePr",
+			":automergeRequireAllStatusChecks",
 			":ignoreModulesAndTests",
-			"helpers:disableTypesNodeMajor"
+			":disableRateLimiting",
+			"helpers:disableTypesNodeMajor",
+			":enableVulnerabilityAlertsWithLabel(security)",
+			":labels(renovate,maintenance-bot)"
 		],
 		"rangeStrategy": "bump",
 		"postUpdateOptions": [
