@@ -19,7 +19,6 @@
 		":labels(renovate,maintenance-bot)"
 	],
 	"baseBranches": ["main"],
-	"branchPrefix": "renovate/",
 	"stabilityDays": 3,
 	"regexManagers": [
 		{
