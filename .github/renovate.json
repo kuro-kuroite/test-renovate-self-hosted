@@ -2,8 +2,23 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:base",
-		":timezone(Asia/Tokyo)"
+		":timezone(Asia/Tokyo)",
+		"group:allNonMajor",
+		":separateMajorReleases",
+		":combinePatchMinorReleases",
+		":ignoreUnstable",
+		":prImmediately",
+		":semanticCommits",
+		":semanticPrefixChore",
+		":updateNotScheduled",
+		":automergeMinor",
+		":automergePr",
+		":automergeRequireAllStatusChecks",
+		":disableRateLimiting",
+		":enableVulnerabilityAlertsWithLabel(security)",
+		":labels(renovate,maintenance-bot)"
 	],
+	"baseBranches": ["main"],
 	"stabilityDays": 3,
 	"regexManagers": [
 		{
