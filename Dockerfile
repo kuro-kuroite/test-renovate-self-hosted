@@ -1,4 +1,4 @@
-FROM linuxbrew/brew:2.7.4
+FROM linuxbrew/brew:2.7.5
 
 RUN brew install zsh
 
