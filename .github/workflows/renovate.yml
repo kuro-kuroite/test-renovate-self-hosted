@@ -4,7 +4,7 @@ on:
   #   - cron: "0 8 * * MON"
   push:
     branches:
-      - renovate
+      - test-renovate
       - main
 
 jobs:
