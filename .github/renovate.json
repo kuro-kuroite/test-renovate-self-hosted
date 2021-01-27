@@ -20,13 +20,6 @@
 	],
 	"baseBranches": ["main"],
 	"stabilityDays": 3,
-	"regexManagers": [
-		{
-			"fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-			"matchStrings": ["uses: (?<depName>.*?)@(?<currentValue>.*?)\n"],
-			"datasourceTemplate": "github-releases"
-		}
-	],
 	"npm": {
 		"extends": [
 			"group:monorepos",
