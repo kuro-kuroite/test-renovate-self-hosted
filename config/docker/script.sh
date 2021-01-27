@@ -16,6 +16,6 @@ brew install yarn
 brew doctor
 
 # renovate: datasource=github-tags depName=nodejs/node versioning=node
-export NODE_VERSION=14.15.3
+export NODE_VERSION=14.15.4
 # renovate: datasource=npm depName=yarn
-export YARN_VERSION=1.22.4
+export YARN_VERSION=1.22.10

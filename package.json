@@ -11,10 +11,10 @@
   },
   "devDependencies": {
     "@types/react": "17.0.0",
-    "renovate": "^24.28.0",
+    "renovate": "^24.28.3",
     "typesync": "^0.8.0"
   },
   "dependencies": {
-    "react": "17.0.0"
+    "react": "17.0.1"
   }
 }
