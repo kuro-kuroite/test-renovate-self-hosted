@@ -23,7 +23,7 @@
 	"enabledManagers": ["npm", "dockerfile", "docker-compose", "github-actions", "regex"],
 	"regexManagers": [
     {
-      "fileMatch": ["^\\config/docker/[^/]+\\.sh$"],
+      "fileMatch": ["^config/docker/[^/]+\\.sh$"],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sexport .*?_VERSION=(?<currentValue>.*)\\s"
       ],
