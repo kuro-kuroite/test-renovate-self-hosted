@@ -1,0 +1,44 @@
+name: lint
+on:
+  - push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # install
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - name: Get Yarn Cache Directory Path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install npm
+        run: |
+            yarn --frozen-lockfile
+      # test
+      - name: Run Unit, Integration, and Snapshot Test with Coverage
+        run: |
+          echo 'Run Unit, Integration, and Snapshot Test with Coverage'
+      - name: Run E2E and Snapshot Test
+        run: |
+          echo 'Run E2E and Snapshot Test'
+      - name: Check Code Coverage
+        run: |
+          echo 'Check Code Coverage'
+      - name: Upload Test Coverage as Artifact
+        run: |
+          echo 'Upload Test Coverage as Artifact'
+      - name: Upload Test Coverage to Codecov
+        run: |
+          echo 'Upload Test Coverage to Codecov'
