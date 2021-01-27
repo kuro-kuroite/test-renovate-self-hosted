@@ -21,13 +21,6 @@
 	"baseBranches": ["main"],
 	"stabilityDays": 3,
 	"enabledManagers": ["npm", "dockerfile", "docker-compose", "github-actions", "regex"],
-	"regexManagers": [
-		{
-			"fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
-			"matchStrings": ["uses: (?<depName>.*?)@(?<currentValue>.*?)\n"],
-			"datasourceTemplate": "github-releases"
-		}
-	],
 	"npm": {
 		"extends": [
 			"group:monorepos",
