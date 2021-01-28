@@ -11,15 +11,17 @@
 		":semanticCommits",
 		":semanticPrefixChore",
 		":updateNotScheduled",
+		":automergeRequireAllStatusChecks",
 		":automergeMinor",
 		":automergePr",
-		":automergeRequireAllStatusChecks",
 		":disableRateLimiting",
+		":dependencyDashboard",
 		":enableVulnerabilityAlertsWithLabel(security)",
 		":labels(renovate,maintenance-bot)"
 	],
 	"baseBranches": ["main"],
 	"stabilityDays": 3,
+	"dependencyDashboardAutoclose": true,
 	"enabledManagers": ["npm", "dockerfile", "docker-compose", "github-actions", "regex"],
 	"regexManagers": [
     {
@@ -28,13 +30,6 @@
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sexport .*?_VERSION=(?<currentValue>.*)\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
-    },
-    {
-      "fileMatch": ["^Dockerfile$"],
-      "matchStrings": [
-        "ARG IMAGE=(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)s"
-      ],
-      "datasourceTemplate": "docker"
     }
   ],
 	"npm": {
