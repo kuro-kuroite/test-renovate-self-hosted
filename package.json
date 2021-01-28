@@ -7,9 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "ci:upgrade": "renovate",
     "fix": "rome check --apply",
-    "postinstall": "npx typesync && npx patch-package",
-    "renovate": "renovate"
+    "postinstall": "npx typesync && npx patch-package"
   },
   "devDependencies": {
     "@types/react": "17.0.0",

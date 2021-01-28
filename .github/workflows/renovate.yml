@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - test-renovate
-      - main
 
 jobs:
   renovate:
@@ -32,11 +31,11 @@ jobs:
       - name: Install npm
         run: |
           yarn --frozen-lockfile
-      - name: Upgrade version of some libraries 
+      - name: Upgrade version of some libraries
         env:
           LOG_LEVEL: debug
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_GITHUB_TOKEN }}
           RENOVATE_CONFIG_FILE: .github/renovate-config.js
         run: |
           npm install -g yarn
-          npm run renovate
+          npm run ci:upgrade
