@@ -14,6 +14,7 @@
   "devDependencies": {
     "@types/react": "17.0.0",
     "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0",
     "renovate": "^24.28.3",
     "rome": "^10.0.4-beta",
     "typesync": "^0.8.0"

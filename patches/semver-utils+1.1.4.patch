@@ -1,0 +1,13 @@
+diff --git a/node_modules/semver-utils/package.json b/node_modules/semver-utils/package.json
+index 3630557..c9ab0fd 100644
+--- a/node_modules/semver-utils/package.json
++++ b/node_modules/semver-utils/package.json
+@@ -18,7 +18,7 @@
+     "range"
+   ],
+   "author": "AJ ONeal",
+-  "license": "APACHEv2",
++  "license": "Apache-2.0",
+   "readmeFilename": "README.md",
+   "devDependencies": {
+     "chai": "^3.0.0",
