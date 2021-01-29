@@ -4,5 +4,8 @@ module.exports = {
 	onboarding: false,
 	branchPrefix: "renovate/",
 	includeForks: true,
-	repositories: ["kuro-kuroite/test-renovate-self-hosted"],
+	repositories: [
+		"kuro-kuroite/test-renovate-self-hosted",
+		"kuro-kuroite/test-github-actions-deploy",
+	],
 };
