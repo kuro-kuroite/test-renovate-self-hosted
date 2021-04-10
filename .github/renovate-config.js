@@ -7,5 +7,6 @@ module.exports = {
 	repositories: [
 		"kuro-kuroite/test-renovate-self-hosted",
 		"kuro-kuroite/test-github-actions-deploy",
+		"kuro-kuroite/kuroite",
 	],
 };
