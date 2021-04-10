@@ -1,10 +1,7 @@
 name: renovate
 on:
-  # schedule:
-  #   - cron: "0 8 * * MON"
-  push:
-    branches:
-      - test-renovate
+  schedule:
+    - cron: "0 8 * * MON"
 
 jobs:
   renovate:
