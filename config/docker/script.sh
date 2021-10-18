@@ -3,7 +3,7 @@
 set -e
 
 # renovate: datasource=github-tags depName=nodejs/node versioning=node
-export NODE_VERSION=14.17.5
+export NODE_VERSION=14.18.1
 
 brew install git
 
