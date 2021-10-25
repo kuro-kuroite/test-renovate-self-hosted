@@ -15,7 +15,7 @@
     "@types/react": "17.0.30",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
-    "renovate": "^24.119.23",
+    "renovate": "^28.9.0",
     "rome": "^10.0.4-beta",
     "typesync": "^0.8.0"
   },
