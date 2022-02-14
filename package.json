@@ -12,7 +12,7 @@
     "postinstall": "npx typesync && npx patch-package"
   },
   "devDependencies": {
-    "@types/react": "17.0.38",
+    "@types/react": "17.0.39",
     "patch-package": "^6.4.7",
     "postinstall-postinstall": "^2.1.0",
     "renovate": "^24.119.23",
