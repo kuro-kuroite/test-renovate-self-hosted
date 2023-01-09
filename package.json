@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@types/react": "17.0.52",
-    "patch-package": "^6.5.0",
+    "patch-package": "^6.5.1",
     "postinstall-postinstall": "^2.1.0",
     "renovate": "^24.119.23",
     "rome": "^10.0.4-beta",
