@@ -16,7 +16,7 @@
     "patch-package": "^6.5.1",
     "postinstall-postinstall": "^2.1.0",
     "renovate": "^24.119.23",
-    "rome": "^10.0.4-beta",
+    "rome": "^11.0.0",
     "typesync": "^0.10.0"
   },
   "dependencies": {
